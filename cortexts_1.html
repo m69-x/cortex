@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cortex Technology Solutions | حلول تقنية للشركات والمكاتب والكافيهات</title>
+<meta name="description" content="أجهزة مكاتب، سيرفرات، أنظمة مخصصة، كاميرات مراقبة، تغطية واي فاي، كروت واي فاي للكافيهات، وأنظمة كاشير مع جرد المخزون.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F2F5F4;--ink:#0B1F24;--mute:#4D6268;--card:#FFFFFF;--line:#D5DEDD;--deep:#08181D;--deep2:#0F2830;--acc:#F2A900;--acc-ink:#1A1300;--teal:#13B5A3;--onDeep:#E8F1F0;
+color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0A171B;--ink:#E8F1F0;--mute:#9DB3B7;--card:#102228;--line:#1E3840;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0A171B;--ink:#E8F1F0;--mute:#9DB3B7;--card:#102228;--line:#1E3840;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Cairo",system-ui,"Segoe UI",Tahoma,sans-serif;line-height:1.8;font-size:17px}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--deep);color:var(--onDeep)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--deep);z-index:30}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;height:62px}
+.logo{font-weight:900;font-size:21px;text-decoration:none;letter-spacing:.2px;direction:ltr}
+.logo b{color:var(--acc)}
+nav{display:flex;gap:22px;font-size:15px}
+nav a{text-decoration:none;color:var(--onDeep);opacity:.8}
+nav a:hover,nav a:focus-visible{opacity:1;color:var(--acc)}
+.btn{display:inline-block;background:var(--acc);color:var(--acc-ink);font-weight:800;padding:10px 22px;border-radius:8px;text-decoration:none;border:0;font-family:inherit;font-size:16px}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--onDeep);border:1.5px solid #3b5961}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.hero{background:var(--deep);color:var(--onDeep);padding:64px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+h1{font-size:clamp(34px,5.4vw,58px);line-height:1.25;margin:0 0 18px;font-weight:900}
+.hero p{font-size:19px;color:#B7CBCD;margin:0 0 28px;max-width:34em}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.pos{background:var(--deep2);border:1px solid #23454e;border-radius:14px;padding:18px;direction:rtl;box-shadow:0 0 0 6px rgba(19,181,163,.08)}
+.pos h4{margin:0 0 10px;font-size:14px;color:#8FB0B4;font-weight:600;display:flex;justify-content:space-between}
+.pos h4 i{font-style:normal;color:var(--teal)}
+.row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed #2a4a53;font-size:15px}
+.row span:last-child{direction:ltr;font-weight:600}
+.row.low span:last-child{color:var(--acc)}
+.tot{display:flex;justify-content:space-between;margin-top:12px;font-weight:800;font-size:18px}
+.tot span:last-child{color:var(--acc);direction:ltr}
+section{padding:68px 0}
+h2{font-size:clamp(26px,3.6vw,38px);margin:0 0 10px;font-weight:900;line-height:1.3}
+.lead{color:var(--mute);margin:0 0 36px;max-width:40em}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px}
+.card h3{margin:0 0 8px;font-size:20px;font-weight:800}
+.card p{margin:0;color:var(--mute);font-size:15.5px}
+.card ul{margin:12px 0 0;padding:0 18px 0 0;color:var(--mute);font-size:15px}
+.card.big{grid-column:span 2;background:var(--deep);color:var(--onDeep);border-color:var(--deep)}
+.card.big p,.card.big ul{color:#B7CBCD}
+.card.big h3{color:var(--acc)}
+.cafe{background:var(--deep2);color:var(--onDeep)}
+.cafe .lead{color:#A9C0C3}
+.cafe .grid .card{background:#0B1F25;border-color:#23454e}
+.cafe .card p,.cafe .card ul{color:#A9C0C3}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s}
+.steps div{border-top:3px solid var(--acc);padding-top:14px}
+.steps div::before{counter-increment:s;content:counter(s);font-weight:900;font-size:30px;color:var(--teal);display:block;line-height:1.2}
+.steps b{display:block;font-size:18px}
+.steps span{color:var(--mute);font-size:15px}
+.contact{background:var(--deep);color:var(--onDeep);text-align:center}
+.contact .num{font-size:clamp(30px,6vw,52px);font-weight:900;direction:ltr;display:block;margin:6px 0 24px;color:var(--acc);text-decoration:none}
+.contact .cta{justify-content:center}
+footer{background:var(--deep);color:#7E9A9E;text-align:center;padding:22px 20px;font-size:14px;border-top:1px solid #1d3a42;direction:ltr}
+@media (max-width:820px){
+.hero .wrap{grid-template-columns:1fr}
+.grid{grid-template-columns:1fr 1fr}.card.big{grid-column:span 2}
+.steps{grid-template-columns:1fr 1fr}
+nav{display:none}
+section{padding:52px 0}
+}
+@media (max-width:540px){.grid,.steps{grid-template-columns:1fr}.card.big{grid-column:auto}.hero{padding:44px 0 52px}}
+.hero,.contact{position:relative;overflow:hidden}
+.hero .wrap,.contact .wrap{position:relative;z-index:1}
+.bg{position:absolute;inset:0;width:100%;height:100%;z-index:0;display:block}
+.hero::after{content:"";position:absolute;inset:-30%;z-index:0;background:radial-gradient(circle at 20% 30%,rgba(19,181,163,.22),transparent 40%),radial-gradient(circle at 80% 70%,rgba(242,169,0,.16),transparent 40%);animation:drift 14s ease-in-out infinite alternate;pointer-events:none}
+@keyframes drift{to{transform:translate(8%,-6%) rotate(8deg) scale(1.1)}}
+@keyframes rise{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
+@keyframes float{50%{transform:translateY(-14px) rotate(-1deg)}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(19,181,163,.6)}100%{box-shadow:0 0 0 14px rgba(19,181,163,0)}}
+@keyframes shine{to{inset-inline-start:140%}}
+@keyframes rowLoop{0%{opacity:0;transform:translateX(28px)}10%,86%{opacity:1;transform:none}96%,100%{opacity:0;transform:translateX(-28px)}}
+@keyframes glowText{50%{text-shadow:0 0 22px rgba(242,169,0,.55)}}
+.hero h1{animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+.hero p{animation:rise .9s .15s cubic-bezier(.2,.8,.2,1) both}
+.hero .cta{animation:rise .9s .3s cubic-bezier(.2,.8,.2,1) both}
+.pos{animation:float 6s ease-in-out infinite,rise 1s .4s both}
+.pos h4 i{animation:glowText 2s infinite}
+.pos .row{animation:rowLoop 9s infinite both}
+.pos .row:nth-of-type(1){animation-delay:.2s}.pos .row:nth-of-type(2){animation-delay:.9s}.pos .row:nth-of-type(3){animation-delay:1.6s}.pos .row:nth-of-type(4){animation-delay:2.3s}
+.pos .row:hover{background:rgba(19,181,163,.12);padding-inline:8px;transition:.25s}
+.logo b{display:inline-block;animation:glowText 2.2s infinite;transition:transform .4s}
+.logo:hover b{transform:rotate(360deg) scale(1.5)}
+.logo{transition:transform .3s}.logo:hover{transform:scale(1.07)}
+nav a{position:relative;padding:4px 0;transition:color .25s,opacity .25s,transform .25s}
+nav a::after{content:"";position:absolute;inset-inline:0;bottom:-2px;height:2px;background:var(--acc);transform:scaleX(0);transform-origin:right;transition:transform .3s}
+nav a:hover{transform:translateY(-3px)}nav a:hover::after{transform:scaleX(1)}
+.btn{position:relative;overflow:hidden;transition:transform .25s cubic-bezier(.3,1.6,.5,1),box-shadow .25s,background .25s}
+.btn::after{content:"";position:absolute;top:0;bottom:0;inset-inline-start:-60%;width:40%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg)}
+.btn:hover{transform:translateY(-4px) scale(1.07);box-shadow:0 10px 26px rgba(242,169,0,.45)}
+.btn:hover::after{animation:shine .8s}
+.btn:active{transform:translateY(0) scale(.96)}
+.btn.ghost:hover{background:rgba(19,181,163,.18);border-color:var(--teal);box-shadow:0 10px 26px rgba(19,181,163,.35)}
+header .btn{animation:pulse 1.8s infinite}
+.card{transition:transform .35s cubic-bezier(.2,.9,.3,1.3),box-shadow .35s,border-color .35s}
+.card:hover{transform:translateY(-10px) rotate(-.6deg);border-color:var(--acc);box-shadow:0 18px 40px rgba(8,24,29,.28),0 0 0 3px rgba(242,169,0,.18)}
+.card h3{transition:color .3s,transform .3s}.card:hover h3{color:var(--teal);transform:translateX(-6px)}
+.card.big:hover h3{color:#fff}
+.steps div{transition:transform .3s,border-color .3s}.steps div:hover{transform:translateY(-8px);border-color:var(--teal)}
+.steps div::before{transition:transform .4s,color .3s}.steps div:hover::before{transform:scale(1.4) translateX(-10px);color:var(--acc)}
+.contact .num{transition:transform .3s,text-shadow .3s;animation:glowText 2.5s infinite}.contact .num:hover{transform:scale(1.08);text-shadow:0 0 34px rgba(242,169,0,.8)}
+footer{transition:color .3s}footer:hover{color:var(--acc)}
+.rv{opacity:0;transform:translateY(40px) scale(.97);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition-duration:.01ms!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap bar">
+<a class="logo" href="#top">Cortex<b>.</b>TS</a>
+<nav aria-label="التنقل الرئيسي">
+<a href="#services">الخدمات</a><a href="#cafe">الكافيهات والمطاعم</a><a href="#how">طريقة العمل</a><a href="#contact">تواصل معنا</a>
+</nav>
+<a class="btn" href="tel:01500762858">اتصل الآن</a>
+</div>
+</header>
+
+<main id="top">
+<div class="hero">
+<canvas class="bg" aria-hidden="true"></canvas>
+<div class="wrap">
+<div>
+<h1>تقنية تشغّل شركتك ومكتبك وكافيهك بدون وجع دماغ</h1>
+<p>من أجهزة المكاتب والسيرفرات للكاميرات والواي فاي وأنظمة الكاشير. بنوفر، بنركّب، وبنبني لك نظام على مقاس شغلك.</p>
+<div class="cta">
+<a class="btn" href="https://wa.me/201500762858">كلمنا على واتساب</a>
+<a class="btn ghost" href="#services">شوف الخدمات</a>
+</div>
+</div>
+<div class="pos" aria-label="مثال على شاشة الكاشير والمخزون">
+<h4><span>نظام الكاشير والمخزون</span><i>● متصل</i></h4>
+<div class="row"><span>قهوة تركي × 3</span><span>90 ج</span></div>
+<div class="row"><span>ساندوتش جبنة × 2</span><span>80 ج</span></div>
+<div class="row"><span>مياه معدنية × 4</span><span>40 ج</span></div>
+<div class="row low"><span>مخزون البن</span><span>باقي 2 كجم</span></div>
+<div class="tot"><span>الإجمالي</span><span>210 ج</span></div>
+</div>
+</div>
+</div>
+
+<section id="services">
+<div class="wrap">
+<h2>خدماتنا</h2>
+<p class="lead">كل اللي محتاجه من مكان واحد، من التوريد لحد التركيب والصيانة.</p>
+<div class="grid">
+<div class="card big">
+<h3>نظام مخصص لشركتك أو مكتبك</h3>
+<p>مش كل شركة شغلها زي التانية. بنصمم لك نظام على حسب طريقة شغلك فعلًا.</p>
+<ul><li>إدارة العملاء والطلبات والفواتير</li><li>تقارير واضحة تتابعها من أي مكان</li><li>صلاحيات مختلفة لكل موظف</li></ul>
+</div>
+<div class="card">
+<h3>أجهزة المكاتب وإكسسواراتها</h3>
+<p>كمبيوترات، لابتوبات، طابعات، شاشات، وكل الإكسسوارات اللي مكتبك محتاجها.</p>
+</div>
+<div class="card">
+<h3>أجهزة السيرفر</h3>
+<p>سيرفرات وتخزين وشبكات للشركات، مع التركيب والإعداد والدعم.</p>
+</div>
+<div class="card">
+<h3>كاميرات المراقبة</h3>
+<p>توريد وتركيب وضبط كاميرات، مع متابعة من الموبايل في أي وقت.</p>
+</div>
+<div class="card">
+<h3>تغطية الواي فاي</h3>
+<p>دراسة المكان وتركيب أجهزة تغطّي كل ركن بإشارة قوية ومستقرة.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="cafe" class="cafe">
+<div class="wrap">
+<h2>حلول الكافيهات والمطاعم</h2>
+<p class="lead">نظام واحد يبيع ويحاسب ويحسب لك المخزون، وشبكة واي فاي تدّيها للزباين بكروت.</p>
+<div class="grid">
+<div class="card">
+<h3>نظام الكاشير</h3>
+<p>شاشة سريعة للطلبات، طباعة فواتير، وتقرير مبيعات يومي لكل كاشير.</p>
+<ul><li>مناسب للكافيهات والمطاعم</li><li>سهل على الموظف الجديد</li></ul>
+</div>
+<div class="card">
+<h3>جرد المخزون</h3>
+<p>كل بيعة بتنقص من المخزون تلقائيًا، وتنبيه لما صنف يقرّب يخلص.</p>
+<ul><li>جرد دوري بضغطة</li><li>معرفة الهالك والفرق</li></ul>
+</div>
+<div class="card">
+<h3>نظام كروت الواي فاي</h3>
+<p>اطبع كروت بمدة أو سرعة محددة، وتحكم في كل مستخدم على الشبكة.</p>
+<ul><li>كروت بوقت محدد</li><li>منع التحميل الزائد</li></ul>
+</div>
+</div>
+</div>
+</section>
+
+<section id="how">
+<div class="wrap">
+<h2>إزاي بنشتغل معاك</h2>
+<p class="lead">خطوات واضحة من أول مكالمة لحد ما الشغل يمشي.</p>
+<div class="steps">
+<div><b>نسمعك</b><span>نفهم نشاطك واحتياجك وميزانيتك.</span></div>
+<div><b>نقترح</b><span>نحدد لك الأجهزة والنظام المناسبين وسعر واضح.</span></div>
+<div><b>نركّب</b><span>توريد وتركيب وإعداد في مكانك.</span></div>
+<div><b>ندعمك</b><span>تدريب للفريق ومتابعة وصيانة بعد التسليم.</span></div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<canvas class="bg" aria-hidden="true"></canvas>
+<div class="wrap">
+<h2>جاهز نبدأ؟</h2>
+<p style="color:#B7CBCD;margin:0">كلمنا واحكي لنا عن شغلك وهنرد عليك بالحل المناسب.</p>
+<a class="num" href="tel:01500762858">01500762858</a>
+<div class="cta">
+<a class="btn" href="https://wa.me/201500762858">واتساب</a>
+<a class="btn ghost" href="tel:01500762858">اتصال مباشر</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer>© 2026 Cortex Technology Solutions · cortexts.online</footer>
+<script>
+(function(){
+var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+document.querySelectorAll('canvas.bg').forEach(function(cv){
+var c=cv.getContext('2d'),W,H,P=[],mx=-999,my=-999,dpr=Math.min(window.devicePixelRatio||1,2),box=cv.parentNode;
+function size(){W=box.clientWidth;H=box.clientHeight;cv.width=W*dpr;cv.height=H*dpr;c.setTransform(dpr,0,0,dpr,0,0);
+var n=Math.round(W*H/16000);n=Math.max(22,Math.min(n,70));P=[];
+for(var i=0;i<n;i++)P.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.7,vy:(Math.random()-.5)*.7,r:1.5+Math.random()*2,a:Math.random()<.2})}
+function draw(){c.clearRect(0,0,W,H);
+for(var i=0;i<P.length;i++){var p=P[i];
+if(!reduce){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;
+var dx=mx-p.x,dy=my-p.y,d=Math.sqrt(dx*dx+dy*dy);if(d<160){p.x+=dx*.012;p.y+=dy*.012}}
+for(var j=i+1;j<P.length;j++){var q=P[j],ex=p.x-q.x,ey=p.y-q.y,e=Math.sqrt(ex*ex+ey*ey);
+if(e<130){c.strokeStyle='rgba(19,181,163,'+(0.38*(1-e/130))+')';c.lineWidth=1;c.beginPath();c.moveTo(p.x,p.y);c.lineTo(q.x,q.y);c.stroke()}}
+c.fillStyle=p.a?'#F2A900':'#13B5A3';c.beginPath();c.arc(p.x,p.y,p.r,0,6.283);c.fill()}
+if(!reduce)requestAnimationFrame(draw)}
+box.addEventListener('pointermove',function(e){var r=box.getBoundingClientRect();mx=e.clientX-r.left;my=e.clientY-r.top});
+box.addEventListener('pointerleave',function(){mx=my=-999});
+size();draw();window.addEventListener('resize',size)});
+var els=document.querySelectorAll('h2,.lead,.card,.steps div,.contact .num,.contact .cta');
+els.forEach(function(el,i){el.classList.add('rv');el.style.transitionDelay=(i%4)*90+'ms'});
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});els.forEach(function(el){io.observe(el)})}else{els.forEach(function(el){el.classList.add('in')})}
+})();
+</script>
+</body>
+</html>
